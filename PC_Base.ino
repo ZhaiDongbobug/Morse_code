@@ -40,7 +40,7 @@ void Short()
   delay(200);
   digitalWrite(light,LOW);
 }
-string a="NICE";
+String a="NICE";
 void setup() {
   // put your setup code here, to run once:
   pinMode(light,OUTPUT);
@@ -53,8 +53,8 @@ void loop() {
     index = a[i]-'A';
     int j=0;
     if(index>=0&&index<26){
-      while(j!=-1){
-        if(nums[index][j] == -1){
+      while(nums[index][j]!=-1){
+        if(nums[index][j] == 1){
           Long();
         }
         else{
